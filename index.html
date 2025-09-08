@@ -15,19 +15,238 @@
     <header>
         <div class="container">
             <div class="header_top">
-                <div class="header_top_left_nav"></div>
-                <div class="header_top_right_nav"></div>
+                <div class="header_top_left_nav">
+                    <ol>
+                        <li><a href="">국내도서</a></li>
+                        <li><a href="">외국도서</a></li>
+                        <li><a href="">중고샵</a></li>
+                        <li><a href="">eBOOK</a></li>
+                        <li><a href="">크레마클럽</a></li>
+                        <li><a href="">티켓</a></li>
+                    </ol>
+                </div>
+                <div class="header_top_right_nav">
+                    <ol>
+                        <li><a href="">로그인</a></li>
+                        <li><a href="">회원가입</a></li>
+                        <li><a href="">마이페이지</a></li>
+                        <li><a href="">주문/배송</a></li>
+                        <li><a href="">고객센터</a></li>
+                    </ol>
+                </div>
             </div>
 
             <div class="header_mid">
-                <div class="header_mid_left_logo"></div>
-                <div class="header_mid_center_search"></div>
-                <div class="header_mid_right_adspage"></div>
+                <div class="header_mid_left_logo">
+                    <a href="">
+                        <img class="mainlogo" src="/OpenAPI_project/img/logo.gif">
+                    </a>
+                </div>
+                <div class="header_mid_center_search">
+                    <input class="search" type="text" placeholder="하버드 상위 1%는 어떻게 토론하는가?" onfocus="this.placeholder=''" onblur="this.placeholder='하버드 상위 1%는 어떻게 토론하는가?'">
+                </div>
+                <div class="header_mid_right_adspage">
+                    <a href="">
+                        <img src="/OpenAPI_project/img/small-img5.jpg" alt="">
+                    </a>
+                    <div>
+                        <span class="prev">전</span>
+                        <span class="next">후</span>
+                    </div>
+                </div>
             </div>
 
             <div class="header_bottom">
-                <div class="header_bottom_left_nav"></div>
-                <div class="header_bottom_right_nav"></div>
+                <div class="header_bottom_left_nav">
+                    <h2>
+                        <a href="">빠른분야찾기</a>
+                        <ul id="category_header" style="display: none; height: 400px; padding-top: 6px;margin-top: 0px; padding-bottom: 8px; margin-bottom: 0px;">
+                            <li>
+                                <a href="">국내도서</a>
+                                <div class="KoreaBook_categoryChild" style="display: none;">
+                                    <div class="categoryChildLeft">
+                                        <p>
+                                            <a href="">"국내도서"
+                                                <i></i>
+                                            </a>
+                                        </p>
+                                        <ul>
+                                            <li><a href="">소설/시/희곡</a></li>
+                                            <li><a href="">역사</a></li>
+                                            <li><a href="">자연과학</a></li>
+                                            <li><a href="">유아/어린이</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="categoryChildRight">
+                                        <ul>
+                                            <li><a href="">만화</a></li>
+                                            <li><a href="">여행</a></li>
+                                            <li><a href="">요리</a></li>
+                                            <li><a href="">육아</a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="/OpenAPI_project/img/category-img1.png">
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="">외국도서</a>
+                                <div class="KoreaBook_categoryChild" style="display: none;">
+                                    <div class="categoryChildLeft">
+                                        <p>
+                                            <a href="">"외국도서"
+                                                <i></i>
+                                            </a>
+                                        </p>
+                                        <ul>
+                                            <li><a href="">해외잡지</a></li>
+                                            <li><a href="">일본도서</a></li>
+                                            <li><a href="">중국도서</a></li>
+                                            <li><a href="">해외입시</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="categoryChildRight">
+                                        <ul>
+                                            <li><a href="">만화</a></li>
+                                            <li><a href="">여행</a></li>
+                                            <li><a href="">요리</a></li>
+                                            <li><a href="">육아</a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="/OpenAPI_project/img/category-img1.png">
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="">중고샵</a>
+                                <div class="KoreaBook_categoryChild" style="display: none;">
+                                    <div class="categoryChildLeft">
+                                        <p>
+                                            <a href="">"중고샵"
+                                                <i></i>
+                                            </a>
+                                        </p>
+                                        <ul>
+                                            <li><a href="">중고음반</a></li>
+                                            <li><a href="">중고DVD</a></li>
+                                            <li><a href="">중고매장</a></li>
+                                            <li><a href="">중고도서</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="categoryChildRight">
+                                        <ul>
+                                            <li><a href="">만화</a></li>
+                                            <li><a href="">여행</a></li>
+                                            <li><a href="">요리</a></li>
+                                            <li><a href="">육아</a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="/OpenAPI_project/img/category-img1.png">
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="">eBOOK</a>
+                                <div class="KoreaBook_categoryChild" style="display: none;">
+                                    <div class="categoryChildLeft">
+                                        <p>
+                                            <a href="">"국내도서"
+                                                <i></i>
+                                            </a>
+                                        </p>
+                                        <ul>
+                                            <li><a href="">소설/시/희곡</a></li>
+                                            <li><a href="">역사</a></li>
+                                            <li><a href="">자연과학</a></li>
+                                            <li><a href="">유아/어린이</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="categoryChildRight">
+                                        <ul>
+                                            <li><a href="">만화</a></li>
+                                            <li><a href="">여행</a></li>
+                                            <li><a href="">요리</a></li>
+                                            <li><a href="">육아</a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="/OpenAPI_project/img/category-img1.png">
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="">크레마클럽</a>
+                                <div class="KoreaBook_categoryChild" style="display: none;">
+                                    <div class="categoryChildLeft">
+                                        <p>
+                                            <a href="">"국내도서"
+                                                <i></i>
+                                            </a>
+                                        </p>
+                                        <ul>
+                                            <li><a href="">소설/시/희곡</a></li>
+                                            <li><a href="">역사</a></li>
+                                            <li><a href="">자연과학</a></li>
+                                            <li><a href="">유아/어린이</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="categoryChildRight">
+                                        <ul>
+                                            <li><a href="">만화</a></li>
+                                            <li><a href="">여행</a></li>
+                                            <li><a href="">요리</a></li>
+                                            <li><a href="">육아</a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="/OpenAPI_project/img/category-img1.png">
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="">티켓</a>
+                                <div class="KoreaBook_categoryChild" style="display: none;">
+                                    <div class="categoryChildLeft">
+                                        <p>
+                                            <a href="">"국내도서"
+                                                <i></i>
+                                            </a>
+                                        </p>
+                                        <ul>
+                                            <li><a href="">소설/시/희곡</a></li>
+                                            <li><a href="">역사</a></li>
+                                            <li><a href="">자연과학</a></li>
+                                            <li><a href="">유아/어린이</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="categoryChildRight">
+                                        <ul>
+                                            <li><a href="">만화</a></li>
+                                            <li><a href="">여행</a></li>
+                                            <li><a href="">요리</a></li>
+                                            <li><a href="">육아</a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="/OpenAPI_project/img/category-img1.png">
+                                </div>
+                            </li>
+                        </ul>
+                    </h2>
+                    <ol>
+                        <li><a href="">베스트</a></li>
+                        <li><a href="">신상품</a></li>
+                        <li><a href="">이벤트</a></li>
+                        <li><a href="">매장안내</a></li>
+                        <li><a href="">블로그</a></li>
+                        <li><a href="">브랜드 스토리</a></li>
+                    </ol>
+                </div>
+                <div class="header_bottom_right_nav">
+                    <ol>
+                        <li><a href="">이달의 사은품</a></li>
+                        <li><a href="">특가할인</a></li>
+                        <li><a href="">추천도서</a></li>
+                        <li><a href="">대량/법인</a></li>
+                    </ol>
+                </div>
             </div>
         </div>
     </header>
@@ -36,15 +255,15 @@
     <!-- Swiper -->
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
+      <div class="swiper-slide"><img src="/OpenAPI_project/img/img1 (4).jpg" alt=""></div>
+      <div class="swiper-slide"><img src="/OpenAPI_project/img/img1 (5).jpg" alt=""></div>
+      <div class="swiper-slide"><img src="/OpenAPI_project/img/img1 (6).jpg" alt=""></div>
+      <div class="swiper-slide"><img src="/OpenAPI_project/img/img1 (7).jpg" alt=""></div>
+      <div class="swiper-slide"><img src="/OpenAPI_project/img/img1 (8).jpg" alt=""></div>
+      <div class="swiper-slide"><img src="/OpenAPI_project/img/img1.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="/OpenAPI_project/img/img2.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="/OpenAPI_project/img/img2 (1).jpg" alt=""></div>
+      <div class="swiper-slide"><img src="/OpenAPI_project/img/img2 (4).jpg" alt=""></div>
     </div>
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
@@ -56,15 +275,15 @@
         <!-- Swiper -->
   <div class="swiper new_item">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
+      <div class="swiper-slide"><img src="/OpenAPI_project/img/img6 (1).jpg" alt=""></div>
+      <div class="swiper-slide"><img src="/OpenAPI_project/img/img6 (2).jpg" alt=""></div>
+      <div class="swiper-slide"><img src="/OpenAPI_project/img/img8 (1).jpg" alt=""></div>
+      <div class="swiper-slide"><img src="/OpenAPI_project/img/img8 (2).jpg" alt=""></div>
+      <div class="swiper-slide"><img src="/OpenAPI_project/img/img9 (1).jpg" alt=""></div>
+      <div class="swiper-slide"><img src="/OpenAPI_project/img/img7 (1).jpg" alt=""></div>
+      <div class="swiper-slide"><img src="/OpenAPI_project/img/img7 (2).jpg" alt=""></div>
+      <div class="swiper-slide"><img src="/OpenAPI_project/img/img10.png" alt=""></div>
+      <div class="swiper-slide"><img src="/OpenAPI_project/img/img11.jpg" alt=""></div>
     </div>
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
@@ -102,15 +321,51 @@
     <footer>
         <div class="container">
             <div class="footer_top">
-                <div class="footer_top_left_nav"></div>
-                <div class="footer_top_right_category"></div>
+                <div class="footer_top_left_nav">
+                    <ol>
+                        <li><a href="">회사소개</a></li>
+                        <li><a href="">인재채용</a></li>
+                        <li><a href="">이용약관</a></li>
+                        <li><a href="">개인정보처리방침</a></li>
+                        <li><a href="">광고안내</a></li>
+                        <li><a href="">제휴안내</a></li>
+                    </ol>
+                </div>
+                <div class="footer_top_right_category">
+                    <select class="selection">
+                        <option>가족회사소개</option>
+                        <option>예스24홀딩스</option>
+                        <option>동아출판</option>
+                        <option>한세드림</option>
+                    </select>
+                </div>
             </div>
             <div class="footer_mid">
-                <div class="footer_mid_left_logo"></div>
-                <div class="footer_mid_center_article"></div>
-                <div class="footer_mid_right_telnum"></div>
+                <div class="footer_mid_left_logo">
+                    <a href="">
+                        <img class="sublogo" src="/OpenAPI_project/img/bottom-img1.png">
+                    </a>
+                </div>
+                <div class="footer_mid_center_article">
+                    <ul>
+                        <li>예스이십사(주)</li>
+                        <li>서울시 영등포구 은행로 11, 5-6층(여의도동, 일산빌딩)</li>
+                        <li>대표: 김석환, 최세라 개인정보호호책임자:권민석</li>
+                        <li>호스팅 서비스 사업자: 예스이십사(주)</li>
+                    </ul>
+                </div>
+                <div class="footer_mid_right_telnum">
+                    <ul>
+                        <li>고객문의</li>
+                        <li>도서음반 1544-3800</li>
+                        <li>중고샵 1566-4295</li>
+                        <li>티켓예매 1544-6399</li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer_bottom_companieslogo"></div>
+            <div class="footer_bottom_companieslogo">
+                <img class="bottom_logos" src="/OpenAPI_project/img/bottom-center.gif">
+            </div>
         </div>
     </footer>
 
