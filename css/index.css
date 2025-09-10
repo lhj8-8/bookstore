@@ -23,6 +23,11 @@
       object-fit: cover;
     }
 
+    .swiper {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     .new{width: 100%; height: 100%; margin: 0 auto;}
 
 /* section1 */
@@ -32,7 +37,13 @@
 /* section2 */
 .section2{width: 1200px; height: 400px; margin: 0 auto ;background-color: gold;}
 .section2_left_adspage{width: 895px; height: 100%;display: flex; float: left;background-color: goldenrod;}
+
 .section2_right_ads{width: 285px; height: 100%;display: flex; float: right;background-color: palevioletred;}
+#section2_right_ads_pages{display: flex; float: right;}
+#popularselect {height:22px; display:block;  width:208px; border:1px solid #d8d8d8; outline:none;text-align: center;}
+#bestseller_select{text-align: center;}
+#popularselect option {font-size:12px; line-height:22px; color:#333; display:block; height:22px; width:208px;}
+#popularsearch_1{display: flex; float: right;margin: 0 10px;}
 
 /* section3 */
 .section3{width: 1200px; height: 390px; margin: 0 auto ;background-color: green;}
@@ -42,6 +53,9 @@
 /* section4 */
 .section4{width: 1200px; height: 710px; margin: 0 auto ;background-color: skyblue;}
 .section4_top_nav{width: 100%;height: 70px;display: flex;background-color: pink;}
+.section4_top_nav ul{display:flex; align-items: center;}
+.section4_top_nav li {padding: 0 20px;}
+
 .section4_mid_adspage{width: 100%;height:430px;display: flex;background-color: aqua;}
 .section4_bottom_ads{width: 100%;height:210px;display: flex;background-color: brown;}
 
@@ -54,4 +68,6 @@
 /* section6 */
 .section6{width: 1200px; height: 540px; margin: 0 auto ;background-color: purple;}
 .section6_left_video{width: 690px; height: 100%;display: flex; float: left;background-color: lightskyblue;}
+.section6_left_video_mp4{width: 500px; height: 400px;}
+
 .section6_right_ads{width: 490px; height: 100%;display: flex; float: right;background-color: darkgreen;}
