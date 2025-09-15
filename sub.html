@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>subpage</title>
+
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul,
+        ol,
+        li {
+            list-style: none;
+        }
+
+        header {
+            width: 1400px;
+            height: 100px;
+            margin: 0 auto;
+            border: 1px solid #eee;
+            padding: 10px;
+            color: #eee;
+            background-color: #0080ff;
+            align-items: center;
+        }
+
+        .logo{width: 200px;height: 200px;display: flex;float: right;margin: -105px 30px 10px 50px;}
+
+        h1 a {
+            text-decoration: none;
+            color:#333;
+            text-align: center;
+        }
+
+        section {
+            width: 1400px;
+            height: 1700px;
+            margin: 30px auto 0 auto;
+            border: 1px solid #0080ff;
+            padding: 10px;
+            position: relative;
+        }
+
+        section h3 {
+            padding: 30px 0 0 20px;
+        }
+
+        /*sub*/
+        .sub_box {
+            width: 400px;
+            height: 500px;
+            float: left;
+            text-align: center;
+            margin: 20px;
+            padding: 15px 30px;
+            border-radius: 4px;
+            border: 1px solid #fff;
+            box-shadow: 4px 4px 4px #fff;
+        }
+
+        .sub_box img {
+            width: 200px;
+            height: 300px;
+            float: left;
+            border: 1px solid #ddd;
+            box-shadow: 4px 4px 4px #eee;
+            margin: 60px 0 0 0px;
+        }
+
+        .sub_box h3 {
+            text-align: left;
+        }
+
+        table {
+            width: 700px;
+            border-top: 3px solid #e9e9e9;
+            float: right;
+            border-bottom: 1px solid #e9e9e9;
+            margin: 150px 150px 0 0px;
+            color: #666;
+        }
+
+        td {
+            padding: 6px 15px;
+            text-align: left;
+        }
+
+        td:first-child {
+            width: 100px;
+        }
+
+        button {
+            margin: 3px;
+            cursor: pointer;
+        }
+
+        button:first-child {
+            background-color: #74c8ea;
+            border-radius: 3px;
+            padding: 10px 20px;
+            color: #fff;
+            border: none;
+        }
+
+        button:first-child:hover {
+            background-color: #0080ff;
+            border-radius: 3px;
+            padding: 10px 20px;
+            color: #fff;
+            border: none;
+        }
+
+        button:nth-child(2) {
+            background-color: #a2abb0;
+            border-radius: 3px;
+            padding: 10px 20px;
+            color: #fff;
+            border: none;
+        }
+
+        button:nth-child(2):hover {
+            background-color: #666;
+            border-radius: 3px;
+            padding: 10px 20px;
+            color: #fff;
+            border: none;
+        }
+
+        button:nth-child(3) {
+            background-color: #fff;
+            border-radius: 3px;
+            padding: 10px 20px;
+            color: #666;
+            border: none;
+            border: 1px solid #ddd;
+        }
+
+        button:nth-child(3):hover {
+            background-color: beige;
+            border-radius: 3px;
+            padding: 10px 20px;
+            color: #666;
+            border: none;
+            border: 1px solid #ddd;
+        }
+
+        button:nth-child(4) {
+            background-color: #fff;
+            border-radius: 3px;
+            padding: 10px 20px;
+            color: #666;
+            border: none;
+            border: 1px solid #ddd;
+        }
+
+        button:nth-child(4):hover {
+            background-color:beige;
+            border-radius: 3px;
+            padding: 10px 20px;
+            color: #666;
+            border: none;
+            border: 1px solid #ddd;
+        }
+
+        .contextbox {
+            width: 95%;
+            height: 350px;
+            background-color: beige;
+            float: left;
+            margin: 50px 0 0 50px;
+        }
+
+        .contextbox h6 {
+            font-size: 20px;
+            color: #666;
+            text-align: left;
+            line-height: 150%;
+            padding: 50px 50px 0px;
+        }
+
+        .contextbox p {
+            font-size: 15px;
+            color: #666;
+            text-align: left;
+            line-height: 150%;
+            padding: 50px;
+        }
+
+        .contextbox span {
+            font-size: 12px;
+            color: #666;
+            float: right;
+            padding: 50px;
+        }
+
+        #tmpBox {
+            width: 1000px;
+            height: 500px;
+            background: #eee;
+            float: left;
+            margin: 50px 0 0 50px;
+            color: #666
+        }
+
+        footer {
+            width: 1400px;
+            height: 80px;
+            margin: 0 auto;
+            border: 1px solid #eee;
+            border-radius: 30px;
+        }
+
+        footer p {
+            text-align: center;
+            font-size: 11px;
+            color: #666;
+            margin: 30px 0 0 0px;
+        }
+    </style>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    
+</head>
+<body>
+    <header>
+        <h1>상세 보기</h1>
+        <div class="logo"><img src="./img/bottom-img1.png" alt=""></div>
+    </header>
+
+    <section>
+        <h3>관련 도서</h3>
+        <hr>
+        <div class="sub_box"></div>
+
+        <table>
+            <tr>
+                <td>판매가</td>
+                <td class="pricenum"></td>
+            </tr>
+
+            <tr>
+                <td>포인트</td>
+                <td>52p</td>
+            </tr>
+
+            <tr>
+                <td>출판사</td>
+                <td class="publisher"></td>
+            </tr>
+
+            <tr>
+                <td>배송구분</td>
+                <td>판매자 배송</td>
+            </tr>
+
+            <tr>
+                <td>배송비</td>
+                <td>무료</td>
+            </tr>
+
+            <tr>
+                <td>수량</td>
+                <td>
+                    <select name="select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <button>바로 구매</button>
+                    <button>장바구니 담기</button>
+                    <button>찜하기</button>
+                    <button>조르기</button>
+                </td>
+            </tr>
+        </table>
+
+        <div class="contextbox"></div>
+        <br>
+        <div class="tmpbox">1234</div>
+    </section>
+
+    <footer>
+        <p>Copyright ⓒ YES24 Corporation All rights reserved.</p>
+    </footer>
+
+    <script>
+        const REST_API_KEY="5d784614d288ce4c039619a07b7cd127";
+
+        async function bookData() {
+            const params = new URLSearchParams({
+                target: "title",
+                query: "꽃들에게 희망을"
+            });
+
+            try {
+                const response = await fetch(`https://dapi.kakao.com/v3/search/book?${params}`, {
+                    method: 'GET',
+                    headers: {
+                        Authorization: `KakaoAK ${REST_API_KEY}`
+                    }
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP 오류! 상태 코드: ${response.status}`);
+                }
+
+                const data = await response.json();
+
+                // 요소 선택
+                const subBox = document.querySelector(".sub_box");
+                const contextBox = document.querySelector(".contextbox");
+                const priceNum = document.querySelector(".pricenum");
+                const publishers=document.querySelector(".publisher");
+
+                // 데이터에서 필요한 값 추출
+                const book = data.documents[0];
+                const { title, thumbnail, authors, price, contents, publisher } = book;
+
+                // 요소 생성 및 추가
+                const titleElement = document.createElement("h3");
+                titleElement.textContent = title;
+                subBox.appendChild(titleElement);
+
+                const imageElement = document.createElement("img");
+                imageElement.src = thumbnail;
+                subBox.appendChild(imageElement);
+
+                const authorElement = document.createElement("h6");
+                authorElement.textContent = authors[0];
+                contextBox.appendChild(authorElement);
+
+                priceNum.textContent += price + "원";
+
+                const contentsElement = document.createElement("p");
+                contentsElement.textContent = contents;
+                contextBox.appendChild(contentsElement);
+                
+                publishers.textContent +=publisher
+
+                const detailSpan = document.createElement("span");
+                detailSpan.textContent = "자세히보기";
+                contextBox.appendChild(detailSpan);
+
+            } catch (error) {
+                console.log('에러발생', error);
+            }
+        }
+
+        bookData();
+
+        //메모장으로 sub 텍스트 가져오기, 서버에 올려야 보임
+        document.addEventListener("DOMContentLoaded", async function () {
+            try {
+                const response = await fetch("./OpenAPI_project/sub.txt");
+                if (!response.ok) {
+                    throw new Error("Network response was not ok");
+                }
+                const data = await response.text();
+                document.getElementById("tmpbox").innerHTML = data;
+            } catch (error) {
+                console.error("There was a problem with the fetch operation:", error);
+            }
+        });
+
+    </script>
+
+</body>
+</html>
