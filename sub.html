@@ -198,14 +198,16 @@
             padding: 50px;
         }
 
-        #tmpBox {
+        .tmpbox {
             width: 1000px;
             height: 500px;
-            background: #eee;
+            background:#eee;
             float: left;
             margin: 50px 0 0 50px;
             color: #666
         }
+
+        .txt{color: #0080ff;}
 
         footer {
             width: 1400px;
@@ -288,7 +290,7 @@
 
         <div class="contextbox"></div>
         <br>
-        <div class="tmpbox">1234</div>
+        <div class="tmpbox"></div>
     </section>
 
     <footer>
@@ -363,12 +365,12 @@
         //메모장으로 sub 텍스트 가져오기, 서버에 올려야 보임
         document.addEventListener("DOMContentLoaded", async function () {
             try {
-                const response = await fetch("./OpenAPI_project/sub.txt");
+                const response = await fetch("./sub.txt");
                 if (!response.ok) {
                     throw new Error("Network response was not ok");
                 }
                 const data = await response.text();
-                document.getElementById("tmpbox").innerHTML = data;
+                document.querySelector(".tmpbox").innerHTML = data;
             } catch (error) {
                 console.error("There was a problem with the fetch operation:", error);
             }

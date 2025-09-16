@@ -61,10 +61,10 @@
                 <div class="header_bottom_left_nav">
                     <h2 style="position: relative;" class="hoverslc">
                         <a href="">빠른분야찾기</a>
-                        <ul id="category_header" style="display: none; height: 400px; padding-top: 6px;margin-top: 0px; padding-bottom: 8px; margin-bottom: 0px; overflow: hidden;">
+                        <ul id="category_header">
                             <li>
                                 <a href="./sub.html">국내도서</a>
-                                <div class="categoryChild" style="display: none;">
+                                <div class="categoryChild">
                                     <div class="categoryChildLeft">
                                         <p>
                                             <a href="./sub.html">"국내도서"
@@ -91,7 +91,7 @@
 
                             <li>
                                 <a href="./sub.html">외국도서</a>
-                                <div class="categoryChild" style="display: none;">
+                                <div class="categoryChild">
                                     <div class="categoryChildLeft">
                                         <p>
                                             <a href="./sub.html">"외국도서"
@@ -119,7 +119,7 @@
 
                             <li>
                                 <a href="./sub.html">중고샵</a>
-                                <div class="categoryChild" style="display: none;">
+                                <div class="categoryChild">
                                     <div class="categoryChildLeft">
                                         <p>
                                             <a href="./sub.html">"중고샵"
@@ -147,7 +147,7 @@
 
                             <li>
                                 <a href="./sub.html">eBOOK</a>
-                                <div class="categoryChild" style="display: none;">
+                                <div class="categoryChild">
                                     <div class="categoryChildLeft">
                                         <p>
                                             <a href="./sub.html">"eBOOK"
@@ -175,7 +175,7 @@
 
                             <li>
                                 <a href="./sub.html">크레마클럽</a>
-                                <div class="categoryChild" style="display: none;">
+                                <div class="categoryChild">
                                     <div class="categoryChildLeft">
                                         <p>
                                             <a href="./sub.html">"크레마클럽"
@@ -203,7 +203,7 @@
 
                             <li>
                                 <a href="./sub.html">티켓</a>
-                                <div class="categoryChild" style="display: none;">
+                                <div class="categoryChild">
                                     <div class="categoryChildLeft">
                                         <p>
                                             <a href="./sub.html">"티켓"
@@ -265,12 +265,93 @@
       <div class="swiper-slide"><img src="./img/img1.jpg" alt=""></div>
       <div class="swiper-slide"><img src="./img/img2.jpg" alt=""></div>
       <div class="swiper-slide"><img src="./img/img2 (1).jpg" alt=""></div>
-      <div class="swiper-slide"><img src="/./img/img2 (4).jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./img/img2 (4).jpg" alt=""></div>
     </div>
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
     <div class="swiper-pagination"></div>
   </div>
+    </div>
+
+    <!-- slider_right -->
+    <div class="side_banner">
+        <h2>실시간</h2>
+        <ul>
+            <li>베스트셀러</li>
+            <li>인기검색어</li>
+        </ul>
+        <br>
+        <hr>
+        <div class="banner">
+            <h3>베스트셀러</h3>
+            <select id="bannerbest">
+                <option>10대</option>
+                <option>20대</option>
+                <option>30대</option>
+            </select>
+            <div class="bb">
+                <div class="best">
+                    <p>미움받을 용기</p>
+                </div>
+                <div class="best">
+                    <p>미움받을 용기2</p>
+                </div>
+            </div>
+
+            <div class="bb">
+                <div class="best">
+                    <p>책으로 읽는 쇼펜하우어</p>
+                </div>
+                <div class="best">
+                    <p>책으로 읽는 쇼펜하우어2</p>
+                </div>
+            </div>
+
+            <div class="bb">
+                <div class="best">
+                    <p>워렌 버핏의 투자 방법</p>
+                </div>
+                <div class="best">
+                    <p>워렌 버핏의 투자 방법2</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner">
+            <h3>인기검색어</h3>
+            <select id="bannerbest">
+                <option>10대</option>
+                <option>20대</option>
+                <option>30대</option>
+            </select>
+            <div class="bb">
+                <div class="best">
+                    <p>수능</p>
+                </div>
+                <div class="best">
+                    <p>수능2</p>
+                </div>
+            </div>
+
+            <div class="bb">
+                <div class="best">
+                    <p>취업</p>
+                </div>
+                <div class="best">
+                    <p>취업2</p>
+                </div>
+            </div>
+
+            <div class="bb">
+                <div class="best">
+                    <p>AI</p>
+                </div>
+                <div class="best">
+                    <p>AI2</p>
+                </div>
+            </div>
+            
+        </div>
     </div>
 
     <div class="section1">
@@ -292,243 +373,6 @@
     <div class="swiper-pagination"></div>
   </div>
     </div>
-
-    <!-- <div class="section2">
-        <div class="section2_left_adspage">
-            <h2>지금 이 책></h2>
-            <div class="section2_left_adspage_box"></div>
-        </div>
-        <div class="section2_right_ads">
-            <div id="section2_right_ads_pages">
-                <div id="bestseller">
-                    <h2 id="bestseller_h2">
-                        <a href="">베스트셀러</a>
-                    </h2>
-                    <div id="bestseller_contents" style="display: block;">
-                        <select id="bestseller_select" style="display: block;">
-                            <option value="국내도서" selected>국내도서</option>
-                            <option value="해외도서">해외도서</option>
-                            <option value="중고샵">중고샵</option>
-                            <option value="eBOOK">eBOOK</option>
-                            <option value="티켓">티켓</option>
-                        </select>    
-                         국내도서 -->
-                            <!-- <div class="bestseller_ko" style="display: block;">
-                                <div class="bestseller_ko_box">
-                                    <div class="bestseller_ko_box_img">
-                                        <img src="" alt="">
-                                        <div class="bestseller_ko_box_img_t">국1</div>
-                                    </div>
-                                </div>
-                                <div class="bestseller_ko_box">
-                                    <div class="bestseller_ko_box_img">
-                                        <img src="" alt="">
-                                        <div class="bestseller_ko_box_img_t">국2</div>
-                                    </div>
-                                </div>
-                                <div class="bestseller_ko_box">
-                                    <div class="bestseller_ko_box_img">
-                                        <img src="" alt="">
-                                        <div class="bestseller_ko_box_img_t">국3</div>
-                                    </div>
-                                </div>
-                            </div> -->
-                            <!-- 해외도서 -->
-                            <!-- <div class="bestseller_fo" style="display: none;">
-                                <div class="bestseller_fo_box">
-                                    <div class="bestseller_fo_box_img">
-                                        <img src="" alt="">
-                                        <div class="bestseller_fo_box_img_t">외1</div>
-                                    </div>
-                                </div>
-                                <div class="bestseller_fo_box">
-                                    <div class="bestseller_fo_box_img">
-                                        <img src="" alt="">
-                                        <div class="bestseller_fo_box_img_t">외2</div>
-                                    </div>
-                                </div>
-                                <div class="bestseller_fo_box">
-                                    <div class="bestseller_fo_box_img">
-                                        <img src="" alt="">
-                                        <div class="bestseller_fo_box_img_t">외3</div>
-                                    </div>
-                                </div>
-                            </div> -->
-                            <!-- 중고도서 -->
-                            <!-- <div class="bestseller_old" style="display: none;">
-                                <div class="bestseller_old_box">
-                                    <div class="bestseller_old_box_img">
-                                        <img src="" alt="">
-                                        <div class="bestseller_old_box_img_t">중1</div>
-                                    </div>
-                                </div>
-                                <div class="bestseller_old_box">
-                                    <div class="bestseller_old_box_img">
-                                        <img src="" alt="">
-                                        <div class="bestseller_old_box_img_t">중2</div>
-                                    </div>
-                                </div>
-                                <div class="bestseller_old_box">
-                                    <div class="bestseller_old_box_img">
-                                        <img src="" alt="">
-                                        <div class="bestseller_old_box_img_t">중3</div>
-                                    </div>
-                                </div>
-                            </div> -->
-                            <!-- eBook -->
-                            <!-- <div class="bestseller_eb" style="display: none;">
-                                <div class="bestseller_eb_box">
-                                    <div class="bestseller_eb_box_img">
-                                        <img src="" alt="">
-                                        <div class="bestseller_eb_box_img_t">e1</div>
-                                    </div>
-                                </div>
-                                <div class="bestseller_eb_box">
-                                    <div class="bestseller_eb_box_img">
-                                        <img src="" alt="">
-                                        <div class="bestseller_eb_box_img_t">e2</div>
-                                    </div>
-                                </div>
-                                <div class="bestseller_eb_box">
-                                    <div class="bestseller_eb_box_img">
-                                        <img src="" alt="">
-                                        <div class="bestseller_eb_box_img_t">e3</div>
-                                    </div>
-                                </div>
-                            </div> -->
-                            <!-- 티켓 -->
-                            <!-- <div class="bestseller_tic" style="display: none;">
-                                <div class="bestseller_tic_box">
-                                    <div class="bestseller_tic_box_img">
-                                        <img src="" alt="">
-                                        <div class="bestseller_tic_box_img_t">티1</div>
-                                    </div>
-                                </div>
-                                <div class="bestseller_tic_box">
-                                    <div class="bestseller_tic_box_img">
-                                        <img src="" alt="">
-                                        <div class="bestseller_tic_box_img_t">티2</div>
-                                    </div>
-                                </div>
-                                <div class="bestseller_tic_box">
-                                    <div class="bestseller_tic_box_img">
-                                        <img src="" alt="">
-                                        <div class="bestseller_tic_box_img_t">티3</div>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                    </div>
-                </div>
-                <div id="popularsearch">
-                    <h2 id="popularsearch_1"><a href="">인기검색어</a></h2>
-                    <div id="popularcontent" style="display: none;">
-                        <select id="popularselect">
-                            <option value="통합">통합</option>
-                            <option value="사회">사회</option>
-                            <option value="과학">과학</option>
-                            <option value="생활">생활</option>
-                        </select> -->
-                        <!-- 통합 -->
-                        <!-- <div class="bestseller_total" style="display: block;">
-                                <div class="bestseller_total_box">
-                                    <div class="bestseller_total_box_img">
-                                        <img src="" alt="">
-                                        <div class="bestseller_total_box_img_t">통1</div>
-                                    </div>
-                                </div>
-                                <div class="bestseller_total_box">
-                                    <div class="bestseller_total_box_img">
-                                        <img src="" alt="">
-                                        <div class="bestseller_total_box_img_t">통2</div>
-                                    </div>
-                                </div>
-                                <div class="bestseller_total_box">
-                                    <div class="bestseller_total_box_img">
-                                        <img src="" alt="">
-                                        <div class="bestseller_total_box_img_t">통3</div>
-                                    </div>
-                                </div>
-                            </div> -->
-                            <!-- 사회 -->
-                            <!-- <div class="bestseller_social" style="display: none;">
-                                <div class="bestseller_social_box">
-                                    <div class="bestseller_social_box_img">
-                                        <img src="" alt="">
-                                        <div class="bestseller_social_box_img_t">사1</div>
-                                    </div>
-                                </div>
-                                <div class="bestseller_social_box">
-                                    <div class="bestseller_social_box_img">
-                                        <img src="" alt="">
-                                        <div class="bestseller_social_box_img_t">사2</div>
-                                    </div>
-                                </div>
-                                <div class="bestseller_social_box">
-                                    <div class="bestseller_social_box_img">
-                                        <img src="" alt="">
-                                        <div class="bestseller_social_box_img_t">사3</div>
-                                    </div>
-                                </div>
-                            </div> -->
-                            <!-- 과학 -->
-                             <!-- <div class="bestseller_science" style="display: none;">
-                                <div class="bestseller_science_box">
-                                    <div class="bestseller_science_box_img">
-                                        <img src="" alt="">
-                                        <div class="bestseller_science_box_img_t">과1</div>
-                                    </div>
-                                </div>
-                                <div class="bestseller_science_box">
-                                    <div class="bestseller_science_box_img">
-                                        <img src="" alt="">
-                                        <div class="bestseller_science_box_img_t">과2</div>
-                                    </div>
-                                </div>
-                                <div class="bestseller_science_box">
-                                    <div class="bestseller_science_box_img">
-                                        <img src="" alt="">
-                                        <div class="bestseller_science_box_img_t">과3</div>
-                                    </div>
-                                </div>
-                            </div> -->
-                             <!-- 생활 -->
-                              <!-- <div class="bestseller_life" style="display: none;">
-                                <div class="bestseller_life_box">
-                                    <div class="bestseller_life_box_img">
-                                        <img src="" alt="">
-                                        <div class="bestseller_life_box_img_t">생1</div>
-                                    </div>
-                                </div>
-                                <div class="bestseller_life_box">
-                                    <div class="bestseller_life_box_img">
-                                        <img src="" alt="">
-                                        <div class="bestseller_life_box_img_t">생2</div>
-                                    </div>
-                                </div>
-                                <div class="bestseller_life_box">
-                                    <div class="bestseller_life_box_img">
-                                        <img src="" alt="">
-                                        <div class="bestseller_life_box_img_t">생3</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="section3">
-        <div class="section3_left_adspage">
-            <h2>크레마샵 화제의 책></h2>
-            <div class="section3_left_adspage_box"></div>
-        </div>
-        <div class="section3_right_adspage">
-            <img class="section3_right_adspage_img" src="./img/img6 (1).jpg">
-        </div>
-    </div> --> 
 
     <div class="section4">
         <div class="section4_mid">
@@ -583,18 +427,6 @@
         </div>
     </div>
     <br>
-
-    <!-- <div class="section6">
-        <div class="section6_right_ads">
-            <p style="display: flex; gap: 10px;">관련상품</p>
-            <div class="section6_right_ads1">
-                <img src="./img/img9.jpg" alt="">
-            </div>
-            <div class="section6_right_ads2">
-                <img src="./img/img8.jpg" alt="">
-            </div>
-        </div>
-    </div> -->
 
     <footer>
         <div class="container">
