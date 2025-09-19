@@ -34,10 +34,25 @@
 .swiper-slide img{height: 391px;border:5px;box-shadow: #333;}
 
 /* slider_right */
-.side_banner{width: 200px;height: 300px;display:block;float: right;unicode-bidi: isolate;background-color: aqua;}
-.side_banner li{cursor: pointer;display: flex;float: left; margin: 0 5px;}
-.side_banner li:hover{text-decoration: underline;}
-.banner:not(:nth-of-type(2)){display: none;}
+* {margin: 0; padding: 0; box-sizing: border-box;}
+  ul, ol {list-style: none;}
+
+  section {width: 300px; height: 350px; margin: 0 auto; position: fixed;right:30px; top: 50%;transform: translateY(-50%);z-index: 5;}
+  .tab_menu {display: flex; float: right; z-index: 2;width: 300px; height: 50px;}
+  .tab_menu li {width: 200px; line-height: 50px; border: 1px solid #aaa; text-align: center; border-bottom: 0;}
+  .active {background-color: #eee; border-bottom: 1px solid #eee;}
+  .tabcontent {width:300px; height: 300px; position: absolute; left: 0; bottom: 0.5px; background-color: #eee; border-top: 1px solid #aaa; display: flex;float: right;}
+
+  #bestsellerselect{height: 30px;width: 100px;align-items:center;}
+  #popularselect{height: 30px;width: 100px;align-items:center;}
+  .bestseller{top:50%;height: 100%;}
+  .popular{top:50%;height: 100%;}
+
+  .bestseller:nth-child(2){display: none;}
+  .bestseller:nth-child(3){display: none;}
+  .popular:nth-child(2){display: none;}
+  .popular:nth-child(3){display: none;}
+
 
 /* section4 */
 .section4{width: 1200px; height: 600px; margin: 0 auto ;position: relative;}
